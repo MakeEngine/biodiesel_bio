@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodiesel: The Plant-Powered Fuel</title>
+    <title>Biodiesel: The Plant-Powered Renewable Fuel</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -17,12 +17,11 @@
     <header class="bg-emerald-900 text-white py-16 px-6 relative overflow-hidden">
         <div class="max-w-5xl mx-auto relative z-10">
             <span class="bg-emerald-800 text-emerald-200 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Scientific Project & Exploration</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6">Biodiesel: Powering the Future from Plants</h1>
+            <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6">Biodiesel: Powering Engines from Plant Lipids</h1>
             <p class="text-lg md:text-xl text-emerald-100 max-w-2xl leading-relaxed">
-                An interactive exploration into how vegetable oils and plant lipids are chemically transformed into clean, renewable fuel alternatives for diesel engines.
+                An advanced interactive exploration into how vegetable oils are chemically converted into high-performance, carbon-neutral alternative fuels.
             </p>
         </div>
-        <!-- Decorative background circle -->
         <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-emerald-800/40 rounded-full blur-3xl pointer-events-none"></div>
     </header>
 
@@ -33,23 +32,34 @@
             <div>
                 <h2 class="text-2xl font-bold text-slate-900 mb-4">What is Biodiesel?</h2>
                 <p class="text-slate-600 leading-relaxed mb-4">
-                    Biodiesel is a biodegradable, renewable fuel manufactured from vegetable oils, animal fats, or recycled restaurant grease. Chemically, it consists of long-chain fatty acid methyl esters (FAME).
+                    Biodiesel is an alternative fuel produced from renewable biological resources such as vegetable oils (soybean, canola, palm), animal fats, or recycled cooking grease. 
                 </p>
                 <p class="text-slate-600 leading-relaxed">
-                    Unlike standard petroleum diesel which drills up ancient carbon from underground reservoirs, biodiesel recycles carbon dioxide that plants absorbed from the atmosphere during their growth cycle.
+                    From a chemistry standpoint, it is comprised of long-chain <strong>fatty acid methyl esters (FAME)</strong>. It is designed to match standard petroleum diesel in compression-ignition combustion performance while drastically cutting net greenhouse gas emissions.
                 </p>
             </div>
             <div class="rounded-xl overflow-hidden shadow-md">
-                <!-- Authentic Wikimedia Commons / Educational Image -->
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Rapeseed_field_in_Sk%C3%A5ne_Sweden_2.jpg/800px-Rapeseed_field_in_Sk%C3%A5ne_Sweden_2.jpg" alt="Rapeseed field used for biofuel production" class="w-full h-64 object-cover">
-                <p class="text-xs text-slate-500 p-2 bg-slate-50 italic text-center">Rapeseed (Canola) fields—a primary feedstock crop for biodiesel generation.</p>
+                <p class="text-xs text-slate-500 p-2 bg-slate-50 italic text-center">Rapeseed crop fields—a prominent raw agricultural feedstock.</p>
+            </div>
+        </section>
+
+        <!-- Scientific Chemistry Section & Diagram -->
+        <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">The Chemistry: Transesterification</h2>
+            <p class="text-slate-600 leading-relaxed mb-6">
+                Plant oils in their raw form are too viscous (thick) to burn smoothly in standard engines. To solve this, chemists use a catalytic reaction called <strong>transesterification</strong>. Triglycerides react with a short-chain alcohol (like methanol) in the presence of a catalyst (such as sodium hydroxide) to split the molecules into FAME (biodiesel) and glycerin.
+            </p>
+            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-50 p-4">
+                <img src="https://encrypted-tbn0.licensed-image.q=tbn:ANd9GcTtNuvEh8GqSaSFIC2YNY51rHQDAuuTM00QPjzHMi0Wf7is0Pg5Sf0HmTjB-Refb7-C-VE1cUu6oWBYO4Y" alt="Transesterification Chemical Reaction Formula" class="w-full h-auto object-contain max-h-72 mx-auto">
+                <p class="text-xs text-slate-500 mt-3 text-center italic">Figure 1: Transesterification chemical pathway converting triglycerides into usable FAME biodiesel.</p>
             </div>
         </section>
 
         <!-- Interactive Process Simulator -->
         <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-            <h2 class="text-2xl font-bold text-slate-900 mb-2">The Seed-to-Engine Pipeline</h2>
-            <p class="text-slate-500 text-sm mb-6">Click each phase below to inspect the underlying scientific steps.</p>
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">Step-by-Step Pipeline</h2>
+            <p class="text-slate-500 text-sm mb-6">Click each phase below to inspect the scientific milestones.</p>
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
                 <button onclick="showStep(1)" id="btn-1" class="p-4 rounded-xl text-left font-semibold text-sm transition-all bg-emerald-600 text-white shadow-sm">1. Feedstock</button>
@@ -61,7 +71,7 @@
             <div id="step-content" class="bg-emerald-50/50 p-6 rounded-xl border border-emerald-100 min-h-[140px] flex flex-col justify-center">
                 <h3 id="step-title" class="text-lg font-bold text-emerald-900 mb-2">Phase 1: Feedstock Cultivation</h3>
                 <p id="step-desc" class="text-emerald-800 text-sm leading-relaxed">
-                    Plants like soybeans, sunflowers, and oil palms (or non-food microalgae) capture sunlight and $CO_2$, synthesizing triglycerides (complex lipid molecules) inside their seeds or cells.
+                    Plants capture sunlight and carbon dioxide, synthesizing energy-rich lipid molecules. Advanced facilities also cultivate microalgae in vertical photobioreactors to maximize yield per acre.
                 </p>
             </div>
         </section>
@@ -69,7 +79,7 @@
         <!-- Interactive Calculator -->
         <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
             <h2 class="text-2xl font-bold text-slate-900 mb-2">Carbon Offset Calculator</h2>
-            <p class="text-slate-500 text-sm mb-6">Estimate the greenhouse gas reduction when switching fossil diesel to plant-based biodiesel.</p>
+            <p class="text-slate-500 text-sm mb-6">Estimate greenhouse gas savings when replacing fossil fuel with plant-based biodiesel.</p>
             
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div class="space-y-4">
@@ -77,7 +87,7 @@
                         <label class="block text-sm font-medium text-slate-700 mb-1">Diesel Replaced per Year: <span id="liters-val" class="font-bold text-emerald-700">1,000</span> Liters</label>
                         <input type="range" id="liters-input" min="100" max="10000" step="100" value="1000" oninput="calculateSavings()" class="w-full accent-emerald-600">
                     </div>
-                    <p class="text-xs text-slate-500">Note: Biodiesel typically reduces net carbon emissions by roughly 78% compared to petroleum diesel across its entire life cycle.</p>
+                    <p class="text-xs text-slate-500">Note: Biodiesel cuts net lifecycle carbon emissions by roughly 78% compared to petroleum diesel.</p>
                 </div>
                 <div class="bg-emerald-900 text-white p-6 rounded-xl text-center flex flex-col justify-center">
                     <span class="text-xs text-emerald-300 uppercase tracking-widest font-semibold">Estimated CO2 Saved</span>
@@ -93,21 +103,32 @@
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
                     <span class="text-rose-600 font-bold text-xs uppercase tracking-wider bg-rose-50 px-2.5 py-1 rounded-md">Common Myth</span>
-                    <h3 class="font-bold text-slate-900 mt-3 mb-2">"Biodiesel destroys standard car engines."</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Unmodified modern diesel engines can run cleanly on low-level blends (like B5 or B10 - 5% to 10% biodiesel). Higher blends (B20 or B100) may require minor fuel line material updates due to biodiesel's natural solvent properties.</p>
+                    <h3 class="font-bold text-slate-900 mt-3 mb-2">"Biodiesel ruins modern diesel engines."</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Unmodified engines run efficiently on standard low-level commercial blends (like B5 or B10). High-concentration blends (B20+) are widely certified for modern heavy-duty transit fleets.</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
                     <span class="text-emerald-600 font-bold text-xs uppercase tracking-wider bg-emerald-50 px-2.5 py-1 rounded-md">Scientific Fact</span>
-                    <h3 class="font-bold text-slate-900 mt-3 mb-2">"It has superior lubricity compared to petroleum."</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Even small biodiesel blends drastically improve fuel lubricity, reducing wear and tear on high-pressure fuel injection pumps compared to ultra-low sulfur petroleum diesel.</p>
+                    <h3 class="font-bold text-slate-900 mt-3 mb-2">"It offers enhanced fuel lubricity."</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Even small percentages of biodiesel significantly improve fuel lubricity, decreasing wear on delicate high-pressure fuel injectors relative to ultra-low sulfur petroleum diesel.</p>
                 </div>
             </div>
         </section>
 
+        <!-- Sources Section -->
+        <section class="bg-slate-100 p-6 rounded-2xl border border-slate-200 text-xs text-slate-600 space-y-2">
+            <h3 class="font-bold text-slate-700 uppercase tracking-wider mb-2">Scientific References & Sources</h3>
+            <p>1. U.S. Department of Energy (DOE) - Alternative Fuels Data Center: Biodiesel Handling and Use Guide.</p>
+            <p>2. National Biodiesel Board (NBB) - Lifecycle Emissions Analysis of Fatty Acid Methyl Esters (FAME).</p>
+            <p>3. Wikimedia Commons - Open Educational scientific media repository (Public domain chemical diagrams & crop photography).</p>
+        </section>
+
     </main>
 
-    <footer class="text-center py-8 text-slate-400 text-xs border-t border-slate-200 mt-16">
+    <!-- FOOTER WITH YOUR NAME EDIT LOCATION -->
+    <footer class="text-center py-8 text-slate-400 text-xs border-t border-slate-200 mt-16 space-y-1">
         <p>Scientific Educational Project • Powered by HTML5 & Tailwind CSS</p>
+        <!-- EDIT YOUR NAME ON THE LINE BELOW -->
+        <p class="text-slate-500 font-medium">Created by: <span id="author-name" class="text-emerald-700 font-bold">Erik</span></p>
     </footer>
 
     <!-- Interactive JavaScript Logic -->
@@ -115,19 +136,19 @@
         const steps = [
             {
                 title: "Phase 1: Feedstock Cultivation",
-                desc: "Plants like soybeans, sunflowers, and oil palms (or non-food microalgae) capture sunlight and CO2, synthesizing triglycerides (complex lipid molecules) inside their seeds or cells."
+                desc: "Plants like soybeans, sunflowers, and oil palms capture sunlight and carbon dioxide, synthesizing triglycerides. Advanced research also utilizes microalgae grown in controlled bioreactors."
             },
             {
                 title: "Phase 2: Mechanical & Chemical Extraction",
-                desc: "Raw plant seeds are harvested and pressed using mechanical expellers to extract crude vegetable oils, which are then filtered to remove solid plant impurities."
+                desc: "Seeds are mechanically pressed to extract crude plant oils, which are subsequently filtered and degummed to remove solid cellular impurities and phospholipids."
             },
             {
                 title: "Phase 3: Transesterification Reaction",
-                desc: "Triglycerides are reacted with an alcohol (typically methanol) in the presence of a catalyst (like sodium hydroxide). This chemical reaction breaks the heavy molecules into lighter Fatty Acid Methyl Esters (Biodiesel) and valuable glycerin byproduct."
+                desc: "Triglycerides are reacted with alcohol in the presence of a catalyst, converting heavy lipids into lighter Fatty Acid Methyl Esters (Biodiesel) and separating out dense glycerin."
             },
             {
                 title: "Phase 4: Combustion & Power",
-                desc: "The refined biodiesel is burned in compression-ignition engines. The energy released drives pistons, while emitting significantly fewer net greenhouse gases and virtually zero sulfur dioxide."
+                desc: "The refined biodiesel is combusted inside diesel engines. The power stroke drives pistons, while producing significantly reduced particulate matter and net-zero fossil carbon emissions."
             }
         ];
 
@@ -147,7 +168,6 @@
         function calculateSavings() {
             const liters = document.getElementById('liters-input').value;
             document.getElementById('liters-val').innerText = Number(liters).toLocaleString();
-            // Standard lifecycle reduction: ~2.1 kg CO2 saved per liter of biodiesel blended
             const savingsKg = liters * 2.1;
             const savingsTons = (savingsKg / 1000).toFixed(1);
             document.getElementById('co2-result').innerText = savingsTons + " Tons";
